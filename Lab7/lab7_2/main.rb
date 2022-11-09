@@ -35,3 +35,9 @@ circle = Circle.new(10, 20, 30)
 p circle.x
 p circle.radius
 circle.print
+
+#Для тестирования
+p circle.kind_of? Point # экзмепляр Circle являнтся потомком Point true
+p a.kind_of? Circle # Аналогично false
+p circle.is_a? Point # экзмепляр Circle являнтся потомком Point true
+p circle.instance_of? Point #Строгое соответствие false
