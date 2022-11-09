@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICS6 Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 40px;
+        }
+
+        main {
+            margin-top: 15px;
+        }
+
+        footer {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .my-primary {
+            background-color: #007E33;
+            color: white;
+        }
+
+        .samplestyle {
+            color: blueviolet;
+            font-style: italic;
+        }
+
+        .secondsample {
+            color: red;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <table>
+                        <tr>
+                            <td>Введите ФИО:</td>
+                            <td><input class="form-control" type="text" name="FIO" placeholder="Иванов Иван Иванович"></td>
+                        </tr>
+                        <tr>
+                            <td>Ваш пол:<span style="color:red">*</span></td>
+                            <td>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">М</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Ж</label>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Придумайте логин:<span style="color:red">*</span></td>
+                            <td><input class="form-control" name="login" type="text" placeholder="login" required></td>
+                        </tr>
+                        <tr>
+                            <td>Придумайте пароль:<span style="color:red">*</span></td>
+                            <td><input name="passw1" type="password" class="form-control" placeholder="Enter password" required></td>
+                        </tr>
+                        <tr>
+                            <td>Введите пароль ещё раз:<span style="color:red">*</span></td>
+                            <td><input name="passw2" type="password" class="form-control" placeholder="Enter password again" required></td>
+                        </tr>
+                        <tr>
+                            <td>Укажите актуальный адрес электронной почты:<span style="color:red">*</span></td>
+                            <td>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Выберите аватар профиля:</td>
+                            <td><input name="avatar" type="file"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn btn-success" name="submit" type="submit" value="Зарегистрироваться"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <table class='table' width="25%" border="2">
+                    <tr>
+                        <thead class="thead-dark">
+                            <th colspan="2">Вторник</th>
+                        </thead>
+                    </tr>
+                    <tr>
+                        <th width="25%">Время</th>
+                        <th width="50%">Предмет</th>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ff00ff">8.30</td>
+                        <td rowspan="2">
+                            <Физика (лек)<br>
+                                <small>323</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10.05</td>
+                    </tr>
+                    <tr>
+                        <td>10.15</td>
+                        <td rowspan="2">Электротехника (сем)<br><small>520</small></td>
+                    </tr>
+                    <tr>
+                        <td>11.50</td>
+                    </tr>
+                    <tr>
+                        <td>12.20</td>
+                        <td rowspan="2">ЭК ФКиС<br><small>СК</small></td>
+                    </tr>
+                    <tr>
+                        <td>13.25</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Хайзенберг и отсылки</h1>
+                <strong>C<sub>10</sub>H<sub>12</sub>N</strong> - формула, которую видел каждый, кто смотрел легендарный
+                сериал
+                <mark>Breaking Bad.</mark><br>
+                <small>На самом деле, в завстаках серий можно обнаружить целую вереницу различных формул, часть из
+                    которых - вполне
+                    безобидные</small><br>
+                <div class='samplestyle'>Там даже можно увидеть формулу</div> y=<var>e</var><sup>x</sup><br>
+                У сериала было множество консультантов, и каждый хотел оставить "научный" след<br>
+                Но главная отсылка в том, что в аннотации написано, что действие происходит в <s>Мексике</s>
+                Нью-Йорке<br>
+                Это отсылает нас к реальной истории учителя химии, <em>"пустившегося во все тяжкие"</em>
+                <br><br>
+                А ещё я решил <span class="secondsample"> немного</span> потренироваться в языке змей, но создавать
+                отдельную
+                страницу для этого <s>не хочу</s> не могу<br>
+                <code>n=5<br>
+                        string="Hello World "<br>
+                        print(string * n)  #Hello World Hello World Hello World Hello World Hello World</code><br>
+                <samp>>> Hello World Hello World Hello World Hello World Hello World</samp>
+            </div>
+        </div>
+    </main>
+    <footer class="my-primary">
+        <div class="container">
+            <p class="footer-text">Footer</p>
+        </div>
+    </footer>
+</body>
+
+</html>
